@@ -18,14 +18,10 @@ class WelcomeViewController: UIViewController {
         let background = UIImageView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
         background.image = UIImage(named: "lax.gates.jpg")
         background.contentMode = .scaleAspectFill
+        background.alpha = 0.5
         view.addSubview(background)
         view.sendSubview(toBack: background)
-        
-        /*
-        let backgroundPic = UIImageView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
-        backgroundPic.image = UIImage(contentsOfFile: "lax.gates.png")
-        view.addSubview(backgroundPic)
-         */
+
     }
 
     override func didReceiveMemoryWarning() {

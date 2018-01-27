@@ -24,6 +24,7 @@
 		29C42144201D28EC00972F13 /* lax.simmons.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 29C4213E201D28EB00972F13 /* lax.simmons.jpg */; };
 		29C42145201D28EC00972F13 /* lax.frat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 29C4213F201D28EC00972F13 /* lax.frat.jpg */; };
 		29C42146201D28EC00972F13 /* lax.manura.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 29C42140201D28EC00972F13 /* lax.manura.jpg */; };
+		29C42148201D3B5F00972F13 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C42147201D3B5F00972F13 /* MapViewController.swift */; };
 		6F1E735BF37C3BD6E23A17B5 /* Pods_Jammap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 810FDE49744DFED768B04FA9 /* Pods_Jammap.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		29C4213E201D28EB00972F13 /* lax.simmons.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lax.simmons.jpg; sourceTree = "<group>"; };
 		29C4213F201D28EC00972F13 /* lax.frat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lax.frat.jpg; sourceTree = "<group>"; };
 		29C42140201D28EC00972F13 /* lax.manura.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lax.manura.jpg; sourceTree = "<group>"; };
+		29C42147201D3B5F00972F13 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		59A2A1C21A946FE3F68E3DD1 /* Pods-Jammap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jammap.release.xcconfig"; path = "Pods/Target Support Files/Pods-Jammap/Pods-Jammap.release.xcconfig"; sourceTree = "<group>"; };
 		810FDE49744DFED768B04FA9 /* Pods_Jammap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jammap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2FC436A09C37DB5CF0D6C87 /* Pods-Jammap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jammap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Jammap/Pods-Jammap.debug.xcconfig"; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				29C4212C201CFE4400972F13 /* LogInViewController.swift */,
 				29C4212E201CFE5200972F13 /* RegisterViewController.swift */,
 				29C42135201D145C00972F13 /* ProfileViewController.swift */,
+				29C42147201D3B5F00972F13 /* MapViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29C4212B201CFE0800972F13 /* WelcomeViewController.swift in Sources */,
+				29C42148201D3B5F00972F13 /* MapViewController.swift in Sources */,
 				29C42117201CF68400972F13 /* AppDelegate.swift in Sources */,
 				29C42136201D145C00972F13 /* ProfileViewController.swift in Sources */,
 				29C4212D201CFE4400972F13 /* LogInViewController.swift in Sources */,

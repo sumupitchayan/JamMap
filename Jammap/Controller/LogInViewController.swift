@@ -14,6 +14,7 @@ class LogInViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +23,7 @@ class LogInViewController: UIViewController {
         let background = UIImageView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
         background.image = UIImage(named: "lax.simmons.jpg")
         background.contentMode = .scaleAspectFill
+        background.alpha = 0.5
         view.addSubview(background)
         view.sendSubview(toBack: background)
     }

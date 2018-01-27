@@ -1,0 +1,6 @@
+framework module Pods_Jammap {
+  umbrella header "Pods-Jammap-umbrella.h"
+
+  export *
+  module * { export * }
+}

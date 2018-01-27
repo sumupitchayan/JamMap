@@ -12,6 +12,7 @@ import Firebase
 
 class RegisterViewController: UIViewController {
     
+    @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
@@ -23,6 +24,7 @@ class RegisterViewController: UIViewController {
         let background = UIImageView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
         background.image = UIImage(named: "lax.frat.jpg")
         background.contentMode = .scaleAspectFill
+        background.alpha = 0.5
         view.addSubview(background)
         view.sendSubview(toBack: background)
     }
@@ -40,6 +42,42 @@ class RegisterViewController: UIViewController {
                 //Success
                 print("Registration successful.")
                 
+                let usernamesDB = Database.database().reference().child("Usernames")
+                let usernamesDictionary = ["Email": Auth.auth().currentUser?.email,
+                                           "Username": self.usernameTextField.text!]
+                usernamesDB.childByAutoId().setValue(usernamesDictionary) {
+                    (error, reference) in
+                    
+                    if error != nil {
+                        print(error!)
+                    } else {
+                        print("Message saved successfully")
+                        
+//                        self.messageTextField.text = ""
+//                        self.messageTextField.isEnabled = true
+//                        self.sendButton.isEnabled = true
+                    }
+                    
+                }
+                
+                /*
+                let usernameDB = Database.database().reference().child("Usernames")
+                
+                usernameDB.observe(.childAdded) { (snapshot) in
+                    let snapshotValue = snapshot.value as! Dictionary<String, String>
+                    let text = snapshotValue["UserID"]!
+                    let sender = snapshotValue["Username"]!
+                    
+                    let message = Message()
+                    message.messageBody = text
+                    message.sender = sender
+                    
+                    self.messageArray.append(message)
+                    
+                    self.configureTableView()
+                    self.messageTableView.reloadData()
+                }
+                */
                 SVProgressHUD.dismiss()
                 self.performSegue(withIdentifier: "registerToMain", sender: self)
             }

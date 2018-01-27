@@ -16,6 +16,14 @@
 		29C4212F201CFE5200972F13 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C4212E201CFE5200972F13 /* RegisterViewController.swift */; };
 		29C42133201D036E00972F13 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29C42132201D036E00972F13 /* GoogleService-Info.plist */; };
 		29C42136201D145C00972F13 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C42135201D145C00972F13 /* ProfileViewController.swift */; };
+		29C42138201D25FD00972F13 /* Lax Campus Photos in Resources */ = {isa = PBXBuildFile; fileRef = 29C42137201D25FD00972F13 /* Lax Campus Photos */; };
+		29C4213A201D280100972F13 /* lax.gates.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 29C42139201D280000972F13 /* lax.gates.jpg */; };
+		29C42141201D28EC00972F13 /* lax.grafiti.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 29C4213B201D28EB00972F13 /* lax.grafiti.jpg */; };
+		29C42142201D28EC00972F13 /* lax.prince.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 29C4213C201D28EB00972F13 /* lax.prince.jpg */; };
+		29C42143201D28EC00972F13 /* lax.snow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 29C4213D201D28EB00972F13 /* lax.snow.jpg */; };
+		29C42144201D28EC00972F13 /* lax.simmons.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 29C4213E201D28EB00972F13 /* lax.simmons.jpg */; };
+		29C42145201D28EC00972F13 /* lax.frat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 29C4213F201D28EC00972F13 /* lax.frat.jpg */; };
+		29C42146201D28EC00972F13 /* lax.manura.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 29C42140201D28EC00972F13 /* lax.manura.jpg */; };
 		6F1E735BF37C3BD6E23A17B5 /* Pods_Jammap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 810FDE49744DFED768B04FA9 /* Pods_Jammap.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +39,14 @@
 		29C4212E201CFE5200972F13 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		29C42132201D036E00972F13 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		29C42135201D145C00972F13 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		29C42137201D25FD00972F13 /* Lax Campus Photos */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Lax Campus Photos"; sourceTree = "<group>"; };
+		29C42139201D280000972F13 /* lax.gates.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lax.gates.jpg; sourceTree = "<group>"; };
+		29C4213B201D28EB00972F13 /* lax.grafiti.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lax.grafiti.jpg; sourceTree = "<group>"; };
+		29C4213C201D28EB00972F13 /* lax.prince.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lax.prince.jpg; sourceTree = "<group>"; };
+		29C4213D201D28EB00972F13 /* lax.snow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lax.snow.jpg; sourceTree = "<group>"; };
+		29C4213E201D28EB00972F13 /* lax.simmons.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lax.simmons.jpg; sourceTree = "<group>"; };
+		29C4213F201D28EC00972F13 /* lax.frat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lax.frat.jpg; sourceTree = "<group>"; };
+		29C42140201D28EC00972F13 /* lax.manura.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lax.manura.jpg; sourceTree = "<group>"; };
 		59A2A1C21A946FE3F68E3DD1 /* Pods-Jammap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jammap.release.xcconfig"; path = "Pods/Target Support Files/Pods-Jammap/Pods-Jammap.release.xcconfig"; sourceTree = "<group>"; };
 		810FDE49744DFED768B04FA9 /* Pods_Jammap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jammap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2FC436A09C37DB5CF0D6C87 /* Pods-Jammap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jammap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Jammap/Pods-Jammap.debug.xcconfig"; sourceTree = "<group>"; };
@@ -77,11 +93,19 @@
 		29C42115201CF68400972F13 /* Jammap */ = {
 			isa = PBXGroup;
 			children = (
+				29C42139201D280000972F13 /* lax.gates.jpg */,
+				29C4213F201D28EC00972F13 /* lax.frat.jpg */,
+				29C4213B201D28EB00972F13 /* lax.grafiti.jpg */,
+				29C42140201D28EC00972F13 /* lax.manura.jpg */,
+				29C4213C201D28EB00972F13 /* lax.prince.jpg */,
+				29C4213E201D28EB00972F13 /* lax.simmons.jpg */,
+				29C4213D201D28EB00972F13 /* lax.snow.jpg */,
 				29C42116201CF68400972F13 /* AppDelegate.swift */,
 				29C42134201D0C5100972F13 /* Model */,
 				29C42129201CFDB100972F13 /* Controller */,
 				29C42128201CFDAA00972F13 /* View */,
 				29C4211D201CF68400972F13 /* Assets.xcassets */,
+				29C42137201D25FD00972F13 /* Lax Campus Photos */,
 				29C42122201CF68400972F13 /* Info.plist */,
 				29C42132201D036E00972F13 /* GoogleService-Info.plist */,
 			);
@@ -186,7 +210,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29C42146201D28EC00972F13 /* lax.manura.jpg in Resources */,
 				29C42121201CF68400972F13 /* LaunchScreen.storyboard in Resources */,
+				29C42144201D28EC00972F13 /* lax.simmons.jpg in Resources */,
+				29C42142201D28EC00972F13 /* lax.prince.jpg in Resources */,
+				29C42141201D28EC00972F13 /* lax.grafiti.jpg in Resources */,
+				29C42145201D28EC00972F13 /* lax.frat.jpg in Resources */,
+				29C4213A201D280100972F13 /* lax.gates.jpg in Resources */,
+				29C42138201D25FD00972F13 /* Lax Campus Photos in Resources */,
+				29C42143201D28EC00972F13 /* lax.snow.jpg in Resources */,
 				29C4211E201CF68400972F13 /* Assets.xcassets in Resources */,
 				29C4211C201CF68400972F13 /* Main.storyboard in Resources */,
 				29C42133201D036E00972F13 /* GoogleService-Info.plist in Resources */,

@@ -13,7 +13,7 @@
         <!--Welcome-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="Jammap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Welcome" id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="Jammap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -186,6 +186,10 @@
                         <viewLayoutGuide key="safeArea" id="mPk-EE-7ON"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" id="jxM-W0-k99"/>
+                    <connections>
+                        <outlet property="userPhotoImageView" destination="lkI-kq-3yK" id="G9J-ew-6ZH"/>
+                        <outlet property="usernameLabel" destination="VY5-5K-IzY" id="awH-9b-gBY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nHU-nI-gPn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

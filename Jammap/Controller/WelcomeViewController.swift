@@ -14,6 +14,18 @@ class WelcomeViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let background = UIImageView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
+        background.image = UIImage(named: "lax.gates.jpg")
+        background.contentMode = .scaleAspectFill
+        view.addSubview(background)
+        view.sendSubview(toBack: background)
+        
+        /*
+        let backgroundPic = UIImageView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
+        backgroundPic.image = UIImage(contentsOfFile: "lax.gates.png")
+        view.addSubview(backgroundPic)
+         */
     }
 
     override func didReceiveMemoryWarning() {

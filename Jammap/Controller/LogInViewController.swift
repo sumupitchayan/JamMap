@@ -18,6 +18,12 @@ class LogInViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let background = UIImageView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
+        background.image = UIImage(named: "lax.simmons.jpg")
+        background.contentMode = .scaleAspectFill
+        view.addSubview(background)
+        view.sendSubview(toBack: background)
     }
 
     override func didReceiveMemoryWarning() {

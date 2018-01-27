@@ -19,6 +19,12 @@ class RegisterViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let background = UIImageView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
+        background.image = UIImage(named: "lax.frat.jpg")
+        background.contentMode = .scaleAspectFill
+        view.addSubview(background)
+        view.sendSubview(toBack: background)
     }
 
     @IBAction func registerPressed(_ sender: Any) {

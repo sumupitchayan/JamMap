@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		29C42117201CF68400972F13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C42116201CF68400972F13 /* AppDelegate.swift */; };
-		29C42119201CF68400972F13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C42118201CF68400972F13 /* ViewController.swift */; };
 		29C4211C201CF68400972F13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29C4211A201CF68400972F13 /* Main.storyboard */; };
 		29C4211E201CF68400972F13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29C4211D201CF68400972F13 /* Assets.xcassets */; };
 		29C42121201CF68400972F13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29C4211F201CF68400972F13 /* LaunchScreen.storyboard */; };
+		29C4212B201CFE0800972F13 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C4212A201CFE0800972F13 /* WelcomeViewController.swift */; };
+		29C4212D201CFE4400972F13 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C4212C201CFE4400972F13 /* LogInViewController.swift */; };
+		29C4212F201CFE5200972F13 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C4212E201CFE5200972F13 /* RegisterViewController.swift */; };
+		29C42133201D036E00972F13 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29C42132201D036E00972F13 /* GoogleService-Info.plist */; };
+		29C42136201D145C00972F13 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C42135201D145C00972F13 /* ProfileViewController.swift */; };
+		6F1E735BF37C3BD6E23A17B5 /* Pods_Jammap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 810FDE49744DFED768B04FA9 /* Pods_Jammap.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		29C42113201CF68400972F13 /* Jammap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jammap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29C42116201CF68400972F13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		29C42118201CF68400972F13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		29C4211B201CF68400972F13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		29C4211D201CF68400972F13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29C42120201CF68400972F13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29C42122201CF68400972F13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29C4212A201CFE0800972F13 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		29C4212C201CFE4400972F13 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		29C4212E201CFE5200972F13 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		29C42132201D036E00972F13 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		29C42135201D145C00972F13 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		59A2A1C21A946FE3F68E3DD1 /* Pods-Jammap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jammap.release.xcconfig"; path = "Pods/Target Support Files/Pods-Jammap/Pods-Jammap.release.xcconfig"; sourceTree = "<group>"; };
+		810FDE49744DFED768B04FA9 /* Pods_Jammap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jammap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2FC436A09C37DB5CF0D6C87 /* Pods-Jammap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jammap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Jammap/Pods-Jammap.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F1E735BF37C3BD6E23A17B5 /* Pods_Jammap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0635E478CA0162BF1D555F82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				810FDE49744DFED768B04FA9 /* Pods_Jammap.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		29C4210A201CF68400972F13 = {
 			isa = PBXGroup;
 			children = (
 				29C42115201CF68400972F13 /* Jammap */,
 				29C42114201CF68400972F13 /* Products */,
+				9554E91FB5271BB2E7A50C66 /* Pods */,
+				0635E478CA0162BF1D555F82 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +78,50 @@
 			isa = PBXGroup;
 			children = (
 				29C42116201CF68400972F13 /* AppDelegate.swift */,
-				29C42118201CF68400972F13 /* ViewController.swift */,
-				29C4211A201CF68400972F13 /* Main.storyboard */,
+				29C42134201D0C5100972F13 /* Model */,
+				29C42129201CFDB100972F13 /* Controller */,
+				29C42128201CFDAA00972F13 /* View */,
 				29C4211D201CF68400972F13 /* Assets.xcassets */,
-				29C4211F201CF68400972F13 /* LaunchScreen.storyboard */,
 				29C42122201CF68400972F13 /* Info.plist */,
+				29C42132201D036E00972F13 /* GoogleService-Info.plist */,
 			);
 			path = Jammap;
+			sourceTree = "<group>";
+		};
+		29C42128201CFDAA00972F13 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				29C4211F201CF68400972F13 /* LaunchScreen.storyboard */,
+				29C4211A201CF68400972F13 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		29C42129201CFDB100972F13 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				29C4212A201CFE0800972F13 /* WelcomeViewController.swift */,
+				29C4212C201CFE4400972F13 /* LogInViewController.swift */,
+				29C4212E201CFE5200972F13 /* RegisterViewController.swift */,
+				29C42135201D145C00972F13 /* ProfileViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		29C42134201D0C5100972F13 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9554E91FB5271BB2E7A50C66 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2FC436A09C37DB5CF0D6C87 /* Pods-Jammap.debug.xcconfig */,
+				59A2A1C21A946FE3F68E3DD1 /* Pods-Jammap.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +131,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29C42125201CF68400972F13 /* Build configuration list for PBXNativeTarget "Jammap" */;
 			buildPhases = (
+				A53C96B1DB9D0D10EA30F8CA /* [CP] Check Pods Manifest.lock */,
 				29C4210F201CF68400972F13 /* Sources */,
 				29C42110201CF68400972F13 /* Frameworks */,
 				29C42111201CF68400972F13 /* Resources */,
+				8E899612752A4C09D75B1DB7 /* [CP] Embed Pods Frameworks */,
+				A10ED830246610A2C79EF75A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,18 +189,86 @@
 				29C42121201CF68400972F13 /* LaunchScreen.storyboard in Resources */,
 				29C4211E201CF68400972F13 /* Assets.xcassets in Resources */,
 				29C4211C201CF68400972F13 /* Main.storyboard in Resources */,
+				29C42133201D036E00972F13 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8E899612752A4C09D75B1DB7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Jammap/Pods-Jammap-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Jammap/Pods-Jammap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A10ED830246610A2C79EF75A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Jammap/Pods-Jammap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A53C96B1DB9D0D10EA30F8CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Jammap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		29C4210F201CF68400972F13 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29C42119201CF68400972F13 /* ViewController.swift in Sources */,
+				29C4212B201CFE0800972F13 /* WelcomeViewController.swift in Sources */,
 				29C42117201CF68400972F13 /* AppDelegate.swift in Sources */,
+				29C42136201D145C00972F13 /* ProfileViewController.swift in Sources */,
+				29C4212D201CFE4400972F13 /* LogInViewController.swift in Sources */,
+				29C4212F201CFE5200972F13 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,11 +403,13 @@
 		};
 		29C42126201CF68400972F13 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2FC436A09C37DB5CF0D6C87 /* Pods-Jammap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WJPGZQQ26X;
 				INFOPLIST_FILE = Jammap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sumu-pitchayan.Jammap";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -287,11 +420,13 @@
 		};
 		29C42127201CF68400972F13 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59A2A1C21A946FE3F68E3DD1 /* Pods-Jammap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WJPGZQQ26X;
 				INFOPLIST_FILE = Jammap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sumu-pitchayan.Jammap";
 				PRODUCT_NAME = "$(TARGET_NAME)";

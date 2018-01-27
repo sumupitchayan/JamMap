@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>491214039186-toenbnruk6ddocq6kabfuk6rinncbneh.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.491214039186-toenbnruk6ddocq6kabfuk6rinncbneh</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAAM6TOeBh1z8z8xKIrxovJFzaUinLc5lQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>491214039186</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.sumu-pitchayan.Jammap</string>
+	<key>PROJECT_ID</key>
+	<string>jammap-bcb43</string>
+	<key>STORAGE_BUCKET</key>
+	<string>jammap-bcb43.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:491214039186:ios:22b576ee16824190</string>
+	<key>DATABASE_URL</key>
+	<string>https://jammap-bcb43.firebaseio.com</string>
+</dict>
+</plist>

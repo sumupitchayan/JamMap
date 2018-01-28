@@ -38,6 +38,7 @@ class RegisterViewController: UIViewController {
             
             if error != nil {
                 print(error!)
+                SVProgressHUD.dismiss()
             } else {
                 //Success
                 print("Registration successful.")

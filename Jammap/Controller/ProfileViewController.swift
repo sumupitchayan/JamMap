@@ -19,13 +19,11 @@ class ProfileViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        self.navigationItem.hidesBackButton = true 
+        self.navigationItem.hidesBackButton = true
+        
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
     
 
     /*

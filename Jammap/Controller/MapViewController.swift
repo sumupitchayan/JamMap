@@ -45,21 +45,27 @@ class MapViewController: UIViewController, MKMapViewDelegate {
 
     @objc func longpress(gestureRecognizer: UILongPressGestureRecognizer) {
         
+        if gestureRecognizer.state == .ended {
             
+                performSegue(withIdentifier: "jamFormSegue", sender: self)
+            
+        }
         
-            let touchPoint = gestureRecognizer.location(in: map)
         
-            let coordinate = map.convert(touchPoint, toCoordinateFrom: map)
         
-            let annotation = MKPointAnnotation()
+        let touchPoint = gestureRecognizer.location(in: map)
         
-            annotation.coordinate = coordinate
+        let coordinate = map.convert(touchPoint, toCoordinateFrom: map)
         
-            annotation.title = "New place"
+        let annotation = MKPointAnnotation()
         
-            annotation.subtitle = "Maybe I'll go here too..."
+        annotation.coordinate = coordinate
         
-            map.addAnnotation(annotation)
+        annotation.title = "New place"
+        
+        annotation.subtitle = "Maybe I'll go here too..."
+        
+        map.addAnnotation(annotation)
         
     }
     

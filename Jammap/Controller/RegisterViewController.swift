@@ -43,21 +43,34 @@ class RegisterViewController: UIViewController {
                 //Success
                 print("Registration successful.")
                 
+                
                 let usernamesDB = Database.database().reference().child("Usernames")
+                let userDictionary = ["Email": Auth.auth().currentUser?.email,
+                                      "Username": self.usernameTextField.text!]
+                usernamesDB.childByAutoId().setValue(userDictionary) {
+                    (error, reference) in
+                    
+                    if error != nil {
+                        print(error!)
+                    } else {
+                        print("UserNAME saved successfully")
+                    }
+                
+                
+                /*
+                let usernamesDB = Database.database().reference()
                 let usernamesDictionary = ["Email": Auth.auth().currentUser?.email,
                                            "Username": self.usernameTextField.text!]
-                usernamesDB.childByAutoId().setValue(usernamesDictionary) {
+                usernamesDB.child("Users").setValue([self.usernameTextField.text! : usernamesDictionary]) {
                     (error, reference) in
                     
                     if error != nil {
                         print(error!)
                     } else {
                         print("Message saved successfully")
-                        
-//                        self.messageTextField.text = ""
-//                        self.messageTextField.isEnabled = true
-//                        self.sendButton.isEnabled = true
                     }
+                */
+                
                     
                 }
                 

@@ -8,7 +8,7 @@
 
 import UIKit
 import Firebase
-import SVProgressHUD
+//import SVProgressHUD
 
 class LogInViewController: UIViewController {
 
@@ -26,11 +26,6 @@ class LogInViewController: UIViewController {
         background.alpha = 0.5
         view.addSubview(background)
         view.sendSubview(toBack: background)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     @IBAction func logInPressed(_ sender: Any) {

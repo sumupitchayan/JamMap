@@ -13,7 +13,7 @@ pod 'Firebase/Database'
 pod 'SVProgressHUD'
 pod 'ChameleonFramework'
 pod 'XLForm'
-
+pod 'PopupDialog'
 end
 
 post_install do |installer|

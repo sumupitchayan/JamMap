@@ -7,17 +7,21 @@
 //
 
 import UIKit
+import Firebase
+import MapKit
 
 class FormViewController: UIViewController {
     
     var host = ""
     var timeStart = ""
     var timeEnd = ""
+    //var title: String = String()
     var location: String = ""
-    //var 
+    var coordinates: CLLocationCoordinate2D = CLLocationCoordinate2D()
     
     @IBOutlet weak var startTimePicker: UIDatePicker!
     @IBOutlet weak var endTimePicker: UIDatePicker!
+    @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var locationTextField: UITextField!
     
     override func viewDidLoad() {
@@ -28,36 +32,39 @@ class FormViewController: UIViewController {
         endTimePicker.datePickerMode = .dateAndTime
     }
     
-
-    /*
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        
-        timeStart = startTimePicker.date
-        timeEnd = endTimePicker.date
-        
-        print(timeStart)
-        print(timeEnd)
-    }
-    */
-    
     @IBAction func createJamEvent(_ sender: Any) {
-        
-        //let test = startTimePicker.calendar.
         
         timeStart = DateFormatter.localizedString(from: startTimePicker.date, dateStyle: .short, timeStyle: .short)
         timeEnd = DateFormatter.localizedString(from: endTimePicker.date, dateStyle: .short, timeStyle: .short)
+        location = locationTextField.text!
+        title = titleTextField.text!
         
-        //print(timeStart)
-        //print(DateFormatter.localizedString(from: timeStart, dateStyle: .short, timeStyle: .short))
+        let eventsDB = Database.database().reference().child("Events")
+        let eventDictionary = ["hostUID": Auth.auth().currentUser?.uid,
+                               "timeStart": timeStart,
+                               "timeEnd": timeEnd,
+                               "location": location,
+                               "title": title,
+                               "latitude": coordinates.latitude,
+                               "longitude": coordinates.longitude] as [String : Any]
         
-        print("TEST:")
-                print(timeStart)
-                print(timeEnd)
-        //print(test)
+        eventsDB.childByAutoId().setValue(eventDictionary) {
+            (error, reference) in
+            
+            if error != nil {
+                print(error!)
+            } else {
+                print("Event saved successfully")
+            }
+            
+        self.performSegue(withIdentifier: "formToMap", sender: self)
+        
     }
     
+        func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
     
-
     /*
     // MARK: - Navigation
 
@@ -68,4 +75,6 @@ class FormViewController: UIViewController {
     }
     */
 
+        
+    }
 }
